@@ -3,7 +3,7 @@ package ArraysTutorials;
 public class LinearSearchData {
 	public static void main(String args[]) {
 		int number[]= {1,2,55,33,10,22,33,43,16};
-		int key = 110;
+		int key = 16;
 		System.out.println("index of key is "+LinearSearch(number,key));
 	}
 	
