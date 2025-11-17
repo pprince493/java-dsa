@@ -1,0 +1,28 @@
+package oops;
+public class InterfaceImplement {
+	public static void main(String args[]) {
+		Queen qn = new Queen();
+		qn.moves();
+	}
+}
+
+interface ChessPlayer{
+	void moves();
+}
+class Queen implements ChessPlayer{
+	public void moves() {
+		System.out.println("up, down, left, right, diagonal (in all 4 dirns)");
+	}
+}
+
+class Rook implements ChessPlayer{
+	public void moves() {
+		System.out.println("up, down, left, right");
+	}
+}
+
+class King implements ChessPlayer{
+	public void moves() {
+		System.out.println("up, down, left, right, diagonal (by 1 step)");
+	}
+}
